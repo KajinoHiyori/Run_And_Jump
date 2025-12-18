@@ -53,6 +53,7 @@ public class GoalManager : MonoBehaviour
                         text.SetActive(true);            //テキストをオンにして非表示→表示にする
                         break;
                 }
+                isGoal = false;     //Goal判定をfalseにする
             }
         }
         if (Input.GetKeyDown(KeyCode.Escape) == true)   // ESCキーでゲームを終了

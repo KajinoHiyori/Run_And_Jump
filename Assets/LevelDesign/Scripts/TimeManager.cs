@@ -32,7 +32,7 @@ public class TimeManager : MonoBehaviour
         {
 
         }
-        else
+        else if (isGoal == false)
         {
             //時間をカウントダウンする
             limit -= Time.deltaTime;

@@ -3127,7 +3127,7 @@ MonoBehaviour:
   limit: 30
   text: {fileID: 1670007520}
   player: {fileID: 2112413753}
-  goalmanager: {fileID: 0}
+  goalmanager: {fileID: 1787498505}
 --- !u!1 &2067512810
 GameObject:
   m_ObjectHideFlags: 0
