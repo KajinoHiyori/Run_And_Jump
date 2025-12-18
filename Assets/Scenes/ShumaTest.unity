@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
       propertyPath: m_Name
-      value: forestpack_foliage_mushroom_red_small
+      value: redmushroom000
       objectReference: {fileID: 0}
     - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
       propertyPath: m_LocalScale.x
@@ -754,7 +754,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
       propertyPath: m_Name
-      value: forestpack_foliage_mushroom_red_small (1)
+      value: redmushroom001
       objectReference: {fileID: 0}
     - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
       propertyPath: m_LocalScale.x
@@ -1101,7 +1101,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1198013417640408, guid: ac1cc01cb5dbf5d4f869c403b38f8a21, type: 3}
       propertyPath: m_Name
-      value: forestpack_stone_large_1
+      value: stone000
       objectReference: {fileID: 0}
     - target: {fileID: 4922444305696846, guid: ac1cc01cb5dbf5d4f869c403b38f8a21, type: 3}
       propertyPath: m_LocalScale.x
@@ -1413,12 +1413,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1383334374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df6adb98ec669aa408ddfc984d2ec8bd, type: 3}
+  m_Script: {fileID: 11500000, guid: d30a604047b349347b18264088fabfb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDown: 1
-  isRandom: 1
-  speed: 5
+  dropFloor: {fileID: 1383334374}
+  dropWait: 5
 --- !u!1001 &1535137249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1498,7 +1497,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1127315056602366, guid: 3a9df2c30188f10438112114dc22bae1, type: 3}
       propertyPath: m_Name
-      value: forestpack_foliage_mushroom_blue_big
+      value: bluemushroom000
       objectReference: {fileID: 0}
     - target: {fileID: 4428985539671814, guid: 3a9df2c30188f10438112114dc22bae1, type: 3}
       propertyPath: m_LocalScale.x
@@ -1652,7 +1651,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1210459693873458, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
       propertyPath: m_Name
-      value: forestpack_tree_fir_tall
+      value: tree000
       objectReference: {fileID: 0}
     - target: {fileID: 4478235978383186, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
       propertyPath: m_LocalScale.x
@@ -1668,15 +1667,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4478235978383186, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.2
+      value: -36.6
       objectReference: {fileID: 0}
     - target: {fileID: 4478235978383186, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.3
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 4478235978383186, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5
+      value: 12.7
       objectReference: {fileID: 0}
     - target: {fileID: 4478235978383186, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1947,7 +1946,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1552303706785112, guid: 68dad9db2dc9d2249aa0a58c5d2adc36, type: 3}
       propertyPath: m_Name
-      value: Mobile_forestpack_tree_stump_1
+      value: tree_stump000
       objectReference: {fileID: 0}
     - target: {fileID: 4475176998798634, guid: 68dad9db2dc9d2249aa0a58c5d2adc36, type: 3}
       propertyPath: m_LocalScale.x
@@ -2070,6 +2069,7 @@ MonoBehaviour:
   limit: 30
   text: {fileID: 1670007520}
   player: {fileID: 2112413753}
+  goalmanager: {fileID: 0}
 --- !u!1 &2112413753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2086647881361348134, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
