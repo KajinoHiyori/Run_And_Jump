@@ -55,6 +55,15 @@ public class GoalManager : MonoBehaviour
                 }
             }
         }
+        if (Input.GetKeyDown(KeyCode.Escape) == true)   // ESCキーでゲームを終了
+        {
+            Application.Quit();
+        }
+    }
+
+    public bool GetIsGameState()
+    {
+        return isGoal;
     }
 
     //当たり判定関数

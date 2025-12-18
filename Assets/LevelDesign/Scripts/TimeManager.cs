@@ -11,6 +11,7 @@ public class TimeManager : MonoBehaviour
     public GameObject text;    //ゲームオーバー表示用テキスト
     public GameObject player;    //プレイヤー格納用
     private bool isGameOver = false;    //ゲームオーバー判定
+    public GoalManager goalmanager;
 
     void Start()
     {
@@ -25,6 +26,20 @@ public class TimeManager : MonoBehaviour
             Restart();
         }
 
+        // ゴールした場合、時間のカウントダウンを停止
+        bool isGoal = goalmanager.GetIsGameState();
+        if (isGoal == true)
+        {
+
+        }
+        else
+        {
+            //時間をカウントダウンする
+            limit -= Time.deltaTime;
+        }
+
+        timeText.text = "Time:" + limit.ToString("f1") + "秒";
+
         //時間制限がきたとき
         if (limit < 0)
         {
@@ -34,10 +49,6 @@ public class TimeManager : MonoBehaviour
             isGameOver = true;            //ゲームオーバー
             return;
         }
-
-        //時間をカウントダウンする
-        limit -= Time.deltaTime;
-        timeText.text = "Time:" + limit.ToString("f1") + "秒";
     }
 
     //シーンを再読み込みする
