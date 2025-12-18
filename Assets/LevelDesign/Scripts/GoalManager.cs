@@ -6,16 +6,54 @@ using UnityEngine.SceneManagement;
 
 public class GoalManager : MonoBehaviour
 {
-    public GameObject player;    //プレイヤーを格納するための変数
-    public GameObject text;    　//テキストを格納するための変数
+    public GameObject player;       //プレイヤーを格納するための変数
+    public GameObject text;         //テキストを格納するための変数
+    public int nCounterNextScene;   // 次のシーンまでの遷移間隔
     private bool isGoal = false;    //Goalしたかどうか判定する
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
 
     void Update()
     {
         //Goalした後で画面をクリックされたとき
         if (isGoal && Input.GetMouseButton(0))
         {
-            Restart();
+            //Restart();
+
+            if (Input.GetMouseButtonDown(0))    // クリック時
+            {
+                switch (SceneManager.GetActiveScene().name)
+                {
+                    case "AkitoTest":   // AkitoTestの場合
+                        SceneManager.LoadScene("HayatoTest");
+                        break;
+
+                    case "HayatoTest":  // HayatoTestの場合
+                        SceneManager.LoadScene("HiyoriTest");
+                        break;
+
+                    case "HiyoriTest":  // HiyoriTestの場合
+                        SceneManager.LoadScene("KairiTest");
+                        break;
+
+                    case "KairiTest":  // KairiTestの場合
+                        SceneManager.LoadScene("ShumaTest");
+                        break;
+
+                    case "ShumaTest":  // ShumaTestの場合
+                        SceneManager.LoadScene("SomaTest");
+                        break;
+
+                    case "SomaTest":  // SomaTestの場合
+                        text.GetComponent<Text>().text = "全てのステージをクリアしました！！";
+                        text.SetActive(true);            //テキストをオンにして非表示→表示にする
+                        break;
+                }
+            }
         }
     }
 
