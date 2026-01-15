@@ -38,10 +38,15 @@ public class TimeManager : MonoBehaviour
             limit -= Time.deltaTime;
         }
 
+        if (limit < 0)
+        {
+            limit = 0;
+        }
+
         timeText.text = "Time:" + limit.ToString("f1") + "秒";
 
         //時間制限がきたとき
-        if (limit < 0)
+        if (limit == 0)
         {
             //ゲームオーバーを表示する
             text.GetComponent<Text>().text = "GameOver...";
