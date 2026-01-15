@@ -28,6 +28,9 @@ public class CharacterControls : MonoBehaviour {
 	public Vector3 checkPoint;
 	private bool slide = false;
 
+	public GoalManager goalmanager;
+	private bool bGoal = false;
+
 	void  Start (){
 		// get the distance to ground
 		distToGround = GetComponent<Collider>().bounds.extents.y;
@@ -143,6 +146,14 @@ public class CharacterControls : MonoBehaviour {
 				slide = false;
 			}
 		}
+
+		// ゴールした場合、パーティクルを表示
+		bool isGoal = goalmanager.GetIsGameState();
+		if (isGoal == true && bGoal == false)
+		{
+			GetComponent<ParticleSystem>().Play();
+		}
+		bGoal = isGoal;
 	}
 
 	float CalculateJumpVerticalSpeed () {
