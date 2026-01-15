@@ -6780,6 +6780,50 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1045916053}
     m_Modifications:
+    - target: {fileID: -3388022967178294792, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3388022967178294792, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3388022967178294792, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
+      propertyPath: simulationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3388022967178294792, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
+      propertyPath: ShapeModule.m_Rotation.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -3388022967178294792, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -3388022967178294792, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -3388022967178294792, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.53144646
+      objectReference: {fileID: 0}
+    - target: {fileID: -3388022967178294792, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.53144646
+      objectReference: {fileID: 0}
+    - target: {fileID: -3388022967178294792, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3388022967178294792, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -2722539975070268649, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2086647880595778208, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6808,6 +6852,10 @@ PrefabInstance:
       propertyPath: jumpHeight
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2086647881361348129, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
+      propertyPath: goalmanager
+      value: 
+      objectReference: {fileID: 1787498505}
     - target: {fileID: 2086647881361348129, guid: 943c29498ab959842b6d7bee1f42370e, type: 3}
       propertyPath: rotateSpeed
       value: 25
