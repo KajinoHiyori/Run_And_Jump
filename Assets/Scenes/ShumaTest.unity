@@ -1417,7 +1417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropFloor: {fileID: 1383334374}
-  dropWait: 5
+  dropWait: 15.18
 --- !u!1001 &1535137249
 PrefabInstance:
   m_ObjectHideFlags: 0

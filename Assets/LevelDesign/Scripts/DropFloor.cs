@@ -6,11 +6,12 @@ public class DropFloor : MonoBehaviour
 {
     public GameObject dropFloor;    //°æ“¾—p
     public float dropWait = 0.5f;   //°—‰º‘Ò‚¿ŠÔ
+    public int returnWait = -15;
 
     private void Update()
     {
         //—‰ºŒãˆê’èˆÈ‰º‚É‰º‚ª‚Á‚½‚ç
-        if (dropFloor.transform.position.y < -5)
+        if (dropFloor.transform.position.y < returnWait)
         {
             dropFloor.transform.localPosition = new Vector3(0.0f, 0.0f, 0.0f);  //Œ³‚ÌˆÊ’u‚Ö–ß‚·
             dropFloor.GetComponent<Rigidbody>().useGravity = false;  //d—Í‚ğ–ß‚·
