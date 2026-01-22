@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/SomaTest.unity
     guid: c01d192c6fb0fe34384e535e0709ee8d
   - enabled: 1
-    path: Assets/Scenes/AkitoTest.unity
-    guid: 22988f045f842d3498602b423c5e987a
-  - enabled: 1
     path: Assets/Scenes/HayatoTest.unity
     guid: 6f2e7c34952c44740abf22824ffeb2f5
+  - enabled: 1
+    path: Assets/Scenes/AkitoTest.unity
+    guid: 22988f045f842d3498602b423c5e987a
   - enabled: 1
     path: Assets/Scenes/ShumaTest.unity
     guid: 4722505d51fe69d4789b609dc9d97625

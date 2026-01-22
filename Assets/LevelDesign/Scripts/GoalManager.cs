@@ -28,37 +28,45 @@ public class GoalManager : MonoBehaviour
             {
                 switch (SceneManager.GetActiveScene().name)
                 {
-                    case "AkitoTest":   // AkitoTestの場合
-                        SceneManager.LoadScene("HayatoTest");
-                        isGoal = false;     //Goal判定をfalseにする
-                        break;
-
-                    case "HayatoTest":  // HayatoTestの場合
-                        SceneManager.LoadScene("HiyoriTest");
-                        isGoal = false;     //Goal判定をfalseにする
-                        break;
-
-                    case "HiyoriTest":  // HiyoriTestの場合
-                        SceneManager.LoadScene("KairiTest");
-                        isGoal = false;     //Goal判定をfalseにする
-                        break;
-
-                    case "KairiTest":  // KairiTestの場合
-                        SceneManager.LoadScene("ShumaTest");
-                        isGoal = false;     //Goal判定をfalseにする
-                        break;
-
-                    case "ShumaTest":  // ShumaTestの場合
+                    case "HiyoriTest":   // HiyoriTestの場合
                         SceneManager.LoadScene("SomaTest");
                         isGoal = false;     //Goal判定をfalseにする
                         break;
 
                     case "SomaTest":  // SomaTestの場合
+                        SceneManager.LoadScene("HayatoTest");
+                        isGoal = false;     //Goal判定をfalseにする
+                        break;
+
+                    case "HayatoTest":  // HayatoTestの場合
+                        SceneManager.LoadScene("AkitoTest");
+                        isGoal = false;     //Goal判定をfalseにする
+                        break;
+
+                    case "AkitoTest":  // AkitoTestの場合
+                        SceneManager.LoadScene("ShumaTest");
+                        isGoal = false;     //Goal判定をfalseにする
+                        break;
+
+                    case "ShumaTest":  // ShumaTestの場合
+                        SceneManager.LoadScene("KairiTest");
+                        isGoal = false;     //Goal判定をfalseにする
+                        break;
+
+                    case "KairiTest":  // KairiTestの場合
                         text.GetComponent<Text>().text = "全てのステージをクリアしました！！";
                         text.SetActive(true);            //テキストをオンにして非表示→表示にする
                         break;
+
+
+                        //AkitoTest
+                        //HayatoTest
+                        //HiyoriTest
+                        //KairiTest
+                        //ShumaTest
+                        //SomaTest
                 }
-               
+
             }
         }
         if (Input.GetKeyDown(KeyCode.Escape) == true)   // ESCキーでゲームを終了
