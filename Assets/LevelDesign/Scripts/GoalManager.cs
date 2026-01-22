@@ -30,22 +30,27 @@ public class GoalManager : MonoBehaviour
                 {
                     case "AkitoTest":   // AkitoTestの場合
                         SceneManager.LoadScene("HayatoTest");
+                        isGoal = false;     //Goal判定をfalseにする
                         break;
 
                     case "HayatoTest":  // HayatoTestの場合
                         SceneManager.LoadScene("HiyoriTest");
+                        isGoal = false;     //Goal判定をfalseにする
                         break;
 
                     case "HiyoriTest":  // HiyoriTestの場合
                         SceneManager.LoadScene("KairiTest");
+                        isGoal = false;     //Goal判定をfalseにする
                         break;
 
                     case "KairiTest":  // KairiTestの場合
                         SceneManager.LoadScene("ShumaTest");
+                        isGoal = false;     //Goal判定をfalseにする
                         break;
 
                     case "ShumaTest":  // ShumaTestの場合
                         SceneManager.LoadScene("SomaTest");
+                        isGoal = false;     //Goal判定をfalseにする
                         break;
 
                     case "SomaTest":  // SomaTestの場合
@@ -53,7 +58,7 @@ public class GoalManager : MonoBehaviour
                         text.SetActive(true);            //テキストをオンにして非表示→表示にする
                         break;
                 }
-                isGoal = false;     //Goal判定をfalseにする
+               
             }
         }
         if (Input.GetKeyDown(KeyCode.Escape) == true)   // ESCキーでゲームを終了
@@ -71,7 +76,7 @@ public class GoalManager : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //当たってきたオブジェクトの名前がプレイヤーの名前と同じとき
-        if (other.name == player.name)
+        if (other.name == player.name && isGoal == false)
         {
             //テキストの内容を変更する
             text.GetComponent<Text>().text = "ゴール！";
